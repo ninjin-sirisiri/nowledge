@@ -2,14 +2,14 @@
   "name": "example-with-tailwindcss",
   "type": "module",
   "scripts": {
-    "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start",
     "deploy": "bun run build && wrangler deploy",
+    "dev": "vinxi dev",
+    "format": "oxfmt .",
+    "format:check": "oxfmt . --check",
     "lint": "oxlint .",
     "lint:fix": "oxlint . --fix",
-    "format": "oxfmt .",
-    "format:check": "oxfmt . --check"
+    "start": "vinxi start"
   },
   "dependencies": {
     "@kobalte/core": "^0.13.11",

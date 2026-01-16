@@ -8,5 +8,13 @@
   "trailingComma": "all",
   "bracketSpacing": true,
   "arrowParens": "always",
-  "ignorePatterns": ["dist", ".solid", ".vinxi"]
+  "ignorePatterns": ["dist", ".solid", ".vinxi"],
+  "experimentalTailwindcss": {
+    "stylesheet": "./src/app.css",
+    "attributes": ["class", "className"],
+    "functions": ["cn", "clsx", "cva"]
+  },
+  "experimentalSortPackageJson": {
+    "sortScripts": true
+  }
 }
