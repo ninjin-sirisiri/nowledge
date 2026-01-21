@@ -13,7 +13,7 @@
 ## Phases
 
 ### Phase 1: Foundation (基盤構築)
-**Status**: ⬜ Not Started
+**Status**: ✅ Complete
 **Objective**: Build the core infra (Auth, DB, Basic Posting)
 **Requirements**: REQ-AUTH-01, REQ-POST-01, REQ-POST-02
 
