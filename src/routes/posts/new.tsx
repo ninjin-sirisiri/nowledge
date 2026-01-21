@@ -15,7 +15,7 @@ export default function NewPost() {
 		content: string,
 		visibility: string
 	) => {
-		const user = session()?.user;
+		const user = session()?.data?.user;
 		if (!user) {
 			setError("ログインが必要です");
 			return;
@@ -38,7 +38,7 @@ export default function NewPost() {
 	return (
 		<main class="container">
 			<Show
-				when={session()?.user}
+				when={session()?.data?.user}
 				fallback={
 					<div class="auth-required">
 						<h1>ログインが必要です</h1>

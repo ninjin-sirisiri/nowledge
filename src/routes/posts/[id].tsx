@@ -9,7 +9,7 @@ export default function PostDetail() {
 	const session = useSession();
 
 	const [post] = createResource(
-		() => ({ id: params.id, userId: session()?.user?.id }),
+		() => ({ id: params.id, userId: session()?.data?.user?.id }),
 		async ({ id, userId }) => getPostById(id, userId)
 	);
 
