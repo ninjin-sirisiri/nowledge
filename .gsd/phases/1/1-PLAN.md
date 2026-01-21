@@ -19,17 +19,16 @@ Establish the development foundation including tooling (Linting, Testing), Datab
 
 <task type="auto">
   <name>Setup Tooling (Linting & Testing)</name>
-  <files>package.json, tsconfig.json, .oxlintrc.json, vitest.config.ts</files>
+  <files>package.json, tsconfig.json, .oxlintrc.json</files>
   <action>
-    - Install dev dependencies for oxlint and vitest.
+    - Install dev dependencies for oxlint and SolidJS testing library.
     - Configure `tsconfig.json` for testing.
-    - Create `vitest.config.ts` for SolidStart.
-    - Add `lint` and `test` scripts to `package.json`.
+    - Add `lint` and `test` scripts to `package.json` (using `bun test`).
   </action>
-  <verify>bun run lint && bun run test --run</verify>
+  <verify>bun run lint && bun test</verify>
   <done>
     - [ ] `oxlint` runs without errors.
-    - [ ] `vitest` runs (even if 0 tests).
+    - [ ] `bun test` runs (even if 0 tests).
   </done>
 </task>
 
